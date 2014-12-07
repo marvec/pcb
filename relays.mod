@@ -1,0 +1,55 @@
+PCBNEW-LibModule-V1  So 6. prosinec 2014, 10:25:50 CET
+# encoding utf-8
+Units mm
+$INDEX
+JS-K
+$EndINDEX
+$MODULE JS-K
+Po 0 0 0 15 5482CB97 00000000 ~~
+Li JS-K
+Sc 0
+AR 
+Op 0 0 0
+T0 7.62 -10.16 1 1 0 0.15 N V 21 N "JS-K"
+T1 7.62 12.7 1 1 0 0.15 N V 21 N "VAL**"
+DS -8.5 -1.19 21 -1.19 0.15 21
+DS 21 -1.19 21 8.81 0.15 21
+DS -8.5 8.81 21 8.81 0.15 21
+DS -8.5 -1.19 -8.5 8.81 0.15 21
+$PAD
+Sh "1" C 1.5 1.5 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.4 0
+$EndPAD
+$PAD
+Sh "2" C 1.5 1.5 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$PAD
+Sh "3" C 1.3 1.3 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 18.9 0
+$EndPAD
+$PAD
+Sh "4" C 1.5 1.5 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3.2 7.62
+$EndPAD
+$PAD
+Sh "5" C 1.3 1.3 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 18.9 7.62
+$EndPAD
+$EndMODULE JS-K
+$EndLIBRARY
