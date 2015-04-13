@@ -41,13 +41,8 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=C:/Users/Pavel Macík/Dropbox/Apps/KiCad/Libraries/relays
-LibName31=C:/Users/Pavel Macík/Dropbox/Apps/KiCad/Libraries/sewer
-LibName32=/home/pmacik/Dropbox/Apps/KiCad/Libraries/i2c
-LibName33=/home/pmacik/Dropbox/Apps/KiCad/Libraries/relays
-LibName34=/home/pmacik/Dropbox/Apps/KiCad/Libraries/sewer
-LibName35=C:/Users/Pavel Macík/Dropbox/Apps/KiCad/Libraries/i2c
-LibName36=philips
+LibName30=philips
+LibName31=simple-parts
 [pcbnew]
 version=1
 LastNetListRead=relay-board.net
@@ -84,7 +79,7 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
-LibName17=C:/Users/Pavel Macík/Dropbox/Apps/KiCad/Libraries/relay-board
+LibName17=simple-modules
 LibDir=/home/mvecera/work/pcb
 [cvpcb]
 version=1
