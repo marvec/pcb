@@ -1,0 +1,219 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:simple-parts
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "13 apr 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_4 P2
+U 1 1 5527D39A
+P 6250 4750
+F 0 "P2" V 6200 4750 50  0000 C CNN
+F 1 "I2C" V 6300 4750 50  0000 C CNN
+F 2 "~" H 6250 4750 60  0000 C CNN
+F 3 "~" H 6250 4750 60  0000 C CNN
+	1    6250 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_2 P3
+U 1 1 5527D3AA
+P 7300 2450
+F 0 "P3" V 7250 2450 40  0000 C CNN
+F 1 "CONN_VCC" V 7350 2450 40  0000 C CNN
+F 2 "~" H 7300 2450 60  0000 C CNN
+F 3 "~" H 7300 2450 60  0000 C CNN
+	1    7300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P4
+U 1 1 5527D3B7
+P 7300 2900
+F 0 "P4" V 7250 2900 40  0000 C CNN
+F 1 "CONN_5V" V 7350 2900 40  0000 C CNN
+F 2 "~" H 7300 2900 60  0000 C CNN
+F 3 "~" H 7300 2900 60  0000 C CNN
+	1    7300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 5527D3BD
+P 6000 1350
+F 0 "P1" V 5950 1350 40  0000 C CNN
+F 1 "CONN_VCC_IN" V 6050 1350 40  0000 C CNN
+F 2 "~" H 6000 1350 60  0000 C CNN
+F 3 "~" H 6000 1350 60  0000 C CNN
+	1    6000 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR1
+U 1 1 5527D41E
+P 5650 1900
+F 0 "#PWR1" H 5650 2000 30  0001 C CNN
+F 1 "VCC" H 5650 2000 30  0000 C CNN
+F 2 "" H 5650 1900 60  0000 C CNN
+F 3 "" H 5650 1900 60  0000 C CNN
+	1    5650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR3
+U 1 1 5527D42D
+P 7000 1600
+F 0 "#PWR3" H 7000 1690 20  0001 C CNN
+F 1 "+5V" H 7000 1690 30  0000 C CNN
+F 2 "" H 7000 1600 60  0000 C CNN
+F 3 "" H 7000 1600 60  0000 C CNN
+	1    7000 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5527D43C
+P 5650 4700
+F 0 "#PWR2" H 5650 4700 30  0001 C CNN
+F 1 "GND" H 5650 4630 30  0001 C CNN
+F 2 "" H 5650 4700 60  0000 C CNN
+F 3 "" H 5650 4700 60  0000 C CNN
+	1    5650 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1850 4750 1600
+Wire Wire Line
+	4750 1600 5400 1600
+Wire Wire Line
+	5400 1600 5400 1900
+Wire Wire Line
+	5400 1900 5900 1900
+Wire Wire Line
+	5900 1900 5900 1700
+Connection ~ 5650 1900
+Wire Wire Line
+	6950 2350 5850 2350
+Wire Wire Line
+	5850 1900 5850 2400
+Connection ~ 5850 1900
+Wire Wire Line
+	6100 1700 6100 4400
+Wire Wire Line
+	6100 2550 6950 2550
+Wire Wire Line
+	5650 4400 5650 4700
+Wire Wire Line
+	4900 4550 5650 4550
+Connection ~ 5000 4550
+Wire Wire Line
+	6100 4400 5650 4400
+Connection ~ 5650 4550
+Connection ~ 6100 2550
+Wire Wire Line
+	4900 1850 4900 1750
+Wire Wire Line
+	4900 1750 7000 1750
+Wire Wire Line
+	7000 1750 7000 1600
+Wire Wire Line
+	6950 2800 6550 2800
+Wire Wire Line
+	6550 2800 6550 1750
+Connection ~ 6550 1750
+Wire Wire Line
+	5850 3000 6950 3000
+Connection ~ 6100 3000
+Wire Wire Line
+	6400 4400 6400 1750
+Connection ~ 6400 1750
+Wire Wire Line
+	6300 4400 6300 4150
+Wire Wire Line
+	6300 4150 6650 4150
+Wire Wire Line
+	6650 4150 6650 5050
+Wire Wire Line
+	6650 5050 3800 5050
+Wire Wire Line
+	3800 5050 3800 3300
+Wire Wire Line
+	3800 3300 4200 3300
+Wire Wire Line
+	4200 3200 3700 3200
+Wire Wire Line
+	3700 3200 3700 5150
+Wire Wire Line
+	3700 5150 6750 5150
+Wire Wire Line
+	6750 5150 6750 4050
+Wire Wire Line
+	6750 4050 6200 4050
+Wire Wire Line
+	6200 4050 6200 4400
+$Comp
+L CP1 C1
+U 1 1 5527D5F8
+P 5850 2600
+F 0 "C1" H 5900 2700 50  0000 L CNN
+F 1 "CP1" H 5900 2500 50  0000 L CNN
+F 2 "~" H 5850 2600 60  0000 C CNN
+F 3 "~" H 5850 2600 60  0000 C CNN
+	1    5850 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 2350
+Wire Wire Line
+	5850 2800 5850 3000
+$Comp
+L ARDUINO_NANO U1
+U 1 1 552B52E5
+P 4900 3000
+F 0 "U1" H 5400 2050 70  0000 C CNN
+F 1 "ARDUINO_NANO" H 5650 1950 70  0000 C CNN
+F 2 "DIL20" H 4900 2950 60  0000 C CNN
+F 3 "~" H 4900 3000 60  0000 C CNN
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
