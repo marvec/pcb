@@ -21,7 +21,6 @@ LIBS:intel
 LIBS:audio
 LIBS:interface
 LIBS:digital-audio
-LIBS:philips
 LIBS:display
 LIBS:cypress
 LIBS:siliconi
@@ -30,9 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:simple-parts
-LIBS:i2c
-LIBS:relays
-LIBS:relay-board-cache
+LIBS:philips
 LIBS:switch-board-cache
 EELAYER 27 0
 EELAYER END

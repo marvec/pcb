@@ -1,16 +1,21 @@
-PCBNEW-LibModule-V1  Po 13. duben 2015, 07:17:16 CEST
+PCBNEW-LibModule-V1  St 29. duben 2015, 10:15:07 CEST
 # encoding utf-8
 Units mm
 $INDEX
 AK300-3
+C2
+C2-large-pads
+CP
 DIP-4__300_ELL
 JS-K-Case
 LED-3MM-Large-pads
 PINHEAD1-2-90
 PINHEAD1-2-UP
 PINHEAD1-4-90
+SIL-9_large_pads
 arduino_nano
 pin_array_3x2-large-pads
+screw-pad
 $EndINDEX
 $MODULE AK300-3
 Po 0 0 0 15 552ACE63 00000000 ~~
@@ -150,6 +155,103 @@ Ne 1 "N-0000025"
 Po 2.4892 0
 $EndPAD
 $EndMODULE AK300-3
+$MODULE C2
+Po 0 0 0 15 554092F1 00000000 ~~
+Li C2
+Cd Condensateur = 2 pas
+Kw C
+Sc 0
+AR /553C12F2
+Op 0 0 0
+T0 0 0 1.016 1.016 0 0.2032 N V 21 N ""
+T1 0 0 1.016 1.016 0 0.2032 N I 21 N "Val**"
+DS -3.556 -1.016 3.556 -1.016 0.3048 21
+DS 3.556 -1.016 3.556 1.016 0.3048 21
+DS 3.556 1.016 -3.556 1.016 0.3048 21
+DS -3.556 1.016 -3.556 -1.016 0.3048 21
+DS -3.556 -0.508 -3.048 -1.016 0.3048 21
+$PAD
+Sh "1" C 1.6 1.6 0 0 0
+Dr 0.8128 0 0
+At STD N 00E0FFFF
+Ne 2 "N-0000038"
+Po -2.54 0
+$EndPAD
+$PAD
+Sh "2" C 1.6 1.6 0 0 0
+Dr 0.8128 0 0
+At STD N 00E0FFFF
+Ne 1 "DGND"
+Po 2.54 0
+$EndPAD
+$SHAPE3D
+Na "discret/capa_2pas_5x5mm.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE C2
+$MODULE C2-large-pads
+Po 0 0 0 15 55409304 00000000 ~~
+Li C2-large-pads
+Cd Condensateur = 2 pas
+Kw C
+Sc 0
+AR /553C12F2
+Op 0 0 0
+T0 0 0 1.016 1.016 0 0.2032 N V 21 N ""
+T1 0 0 1.016 1.016 0 0.2032 N I 21 N "Val**"
+DS -3.556 -1.016 3.556 -1.016 0.3048 21
+DS 3.556 -1.016 3.556 1.016 0.3048 21
+DS 3.556 1.016 -3.556 1.016 0.3048 21
+DS -3.556 1.016 -3.556 -1.016 0.3048 21
+DS -3.556 -0.508 -3.048 -1.016 0.3048 21
+$PAD
+Sh "1" C 1.6 1.6 0 0 0
+Dr 0.8128 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2.54 0
+$EndPAD
+$PAD
+Sh "2" C 1.6 1.6 0 0 0
+Dr 0.8128 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2.54 0
+$EndPAD
+$SHAPE3D
+Na "discret/capa_2pas_5x5mm.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE C2-large-pads
+$MODULE CP
+Po 0 0 0 15 552FFE45 00000000 ~~
+Li CP
+Sc 0
+AR /54847E58
+Op 0 0 0
+T0 0 0 1 1 0 0.15 N V 21 N "CP"
+T1 0.508 1.524 1 1 0 0.15 N V 21 N "Val**"
+T2 1.016 -1.524 1 1 0 0.15 N V 21 N "+"
+DC 0 0 2.54 0 0.15 21
+$PAD
+Sh "2" C 1.5 1.5 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1.016 0
+$EndPAD
+$PAD
+Sh "1" R 1.5 1.5 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1.016 0
+$EndPAD
+$EndMODULE CP
 $MODULE DIP-4__300_ELL
 Po 0 0 0 15 552ACEA0 00000000 ~~
 Li DIP-4__300_ELL
@@ -443,6 +545,85 @@ Ne 2 "GND"
 Po 3.81 0
 $EndPAD
 $EndMODULE PINHEAD1-4-90
+$MODULE SIL-9_large_pads
+Po 0 0 0 15 553D5A6A 00000000 ~~
+Li SIL-9_large_pads
+Cd Connecteur 9 pins
+Kw CONN DEV
+Sc 0
+AR /553C2A16
+Op 0 0 0
+T0 -7.62 -2.54 1.72974 1.08712 0 0.3048 N V 21 N "RR1"
+T1 5.08 -2.54 1.524 1.016 0 0.3048 N V 21 N "RNLA09 8x10k"
+DS 11.43 -1.27 11.43 1.27 0.3048 21
+DS 11.43 1.27 -11.43 1.27 0.3048 21
+DS -11.43 1.27 -11.43 -1.27 0.3048 21
+DS 11.43 -1.27 -11.43 -1.27 0.3048 21
+DS -8.89 -1.27 -8.89 1.27 0.3048 21
+$PAD
+Sh "1" R 1.6 1.6 0 0 0
+Dr 0.3 0 0
+At STD N 00E0FFFF
+Ne 1 "+5V"
+Po -10.16 0
+$EndPAD
+$PAD
+Sh "2" C 1.6 1.6 0 0 0
+Dr 0.3 0 0
+At STD N 00E0FFFF
+Ne 9 "N-0000023"
+Po -7.62 0
+$EndPAD
+$PAD
+Sh "3" C 1.6 1.6 0 0 0
+Dr 0.3 0 0
+At STD N 00E0FFFF
+Ne 8 "N-0000022"
+Po -5.08 0
+$EndPAD
+$PAD
+Sh "4" C 1.6 1.6 0 0 0
+Dr 0.3 0 0
+At STD N 00E0FFFF
+Ne 7 "N-0000021"
+Po -2.54 0
+$EndPAD
+$PAD
+Sh "5" C 1.6 1.6 0 0 0
+Dr 0.3 0 0
+At STD N 00E0FFFF
+Ne 2 "N-0000015"
+Po 0 0
+$EndPAD
+$PAD
+Sh "6" C 1.6 1.6 0 0 0
+Dr 0.3 0 0
+At STD N 00E0FFFF
+Ne 6 "N-0000020"
+Po 2.54 0
+$EndPAD
+$PAD
+Sh "7" C 1.6 1.6 0 0 0
+Dr 0.3 0 0
+At STD N 00E0FFFF
+Ne 5 "N-0000019"
+Po 5.08 0
+$EndPAD
+$PAD
+Sh "8" C 1.6 1.6 0 0 0
+Dr 0.3 0 0
+At STD N 00E0FFFF
+Ne 4 "N-0000018"
+Po 7.62 0
+$EndPAD
+$PAD
+Sh "9" C 1.6 1.6 0 0 0
+Dr 0.3 0 0
+At STD N 00E0FFFF
+Ne 3 "N-0000017"
+Po 10.16 0
+$EndPAD
+$EndMODULE SIL-9_large_pads
 $MODULE arduino_nano
 Po 0 0 0 15 552B5158 00000000 ~~
 Li arduino_nano
@@ -734,4 +915,20 @@ Of 0 0 0
 Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE pin_array_3x2-large-pads
+$MODULE screw-pad
+Po 0 0 0 15 51979136 00000000 ~~
+Li screw-pad
+Sc 0
+AR 
+Op 0 0 0
+T0 0 0.508 1 1 0 0.15 N V 21 N "Ref**"
+T1 0 -1.016 1 1 0 0.15 N V 21 N "Val**"
+$PAD
+Sh "" C 6 6 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE screw-pad
 $EndLIBRARY
