@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "13 apr 2015"
+Date "6 may 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -145,7 +145,6 @@ Wire Wire Line
 	5650 4400 5650 4700
 Wire Wire Line
 	4900 4550 5650 4550
-Connection ~ 5000 4550
 Wire Wire Line
 	6100 4400 5650 4400
 Connection ~ 5650 4550
@@ -172,7 +171,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 4150 6650 4150
 Wire Wire Line
-	6650 4150 6650 5050
+	6650 3950 6650 5050
 Wire Wire Line
 	6650 5050 3800 5050
 Wire Wire Line
@@ -206,8 +205,40 @@ Connection ~ 5850 2350
 Wire Wire Line
 	5850 2800 5850 3000
 $Comp
+L R R1
+U 1 1 55492A45
+P 6500 3700
+F 0 "R1" V 6580 3700 40  0000 C CNN
+F 1 "10k" V 6507 3701 40  0000 C CNN
+F 2 "~" V 6430 3700 30  0000 C CNN
+F 3 "~" H 6500 3700 30  0000 C CNN
+	1    6500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 55492A63
+P 6650 3700
+F 0 "R2" V 6730 3700 40  0000 C CNN
+F 1 "10k" V 6657 3701 40  0000 C CNN
+F 2 "~" V 6580 3700 30  0000 C CNN
+F 3 "~" H 6650 3700 30  0000 C CNN
+	1    6650 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3950 6500 4050
+Connection ~ 6500 4050
+Connection ~ 6650 4150
+Wire Wire Line
+	6650 3450 6650 1750
+Connection ~ 6650 1750
+Wire Wire Line
+	6500 3450 6500 1750
+Connection ~ 6500 1750
+$Comp
 L ARDUINO_NANO U1
-U 1 1 552B52E5
+U 1 1 5549A92F
 P 4900 3000
 F 0 "U1" H 5400 2050 70  0000 C CNN
 F 1 "ARDUINO_NANO" H 5650 1950 70  0000 C CNN

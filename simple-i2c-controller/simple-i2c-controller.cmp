@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Po 13. duben 2015, 07:23:55 CEST
+Cmp-Mod V01 Created by CvPcb (2013-june-11)-stable date = St 6. květen 2015, 07:39:30 CEST
 
 BeginCmp
 TimeStamp = /5527D5F8;
@@ -36,7 +36,21 @@ IdModule  = PINHEAD1-2-UP;
 EndCmp
 
 BeginCmp
-TimeStamp = /552B52E5;
+TimeStamp = /55492A45;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = R3-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /55492A63;
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = R3-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /5549A92F;
 Reference = U1;
 ValeurCmp = ARDUINO_NANO;
 IdModule  = arduino_nano;
